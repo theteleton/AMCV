@@ -4,8 +4,6 @@ import matplotlib. pyplot as plt
 from ex1_utils import rotate_image, show_flow
 from of_methods import lucas_kanade, horn_schunck
 
-#im1 = cv2.imread("./disparity/cporta_left.png")
-#im2 = cv2.imread("./disparity/cporta_right.png")
 im1 = np.random.rand(200, 200).astype(np.float32)
 im2 = im1.copy()
 im2 = rotate_image(im2, -1)
