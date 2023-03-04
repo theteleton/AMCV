@@ -24,6 +24,24 @@ def lucas_kanade(im1, im2, N):
 
     return U, V
     
+def lucas_kanade_pyramid(im1, im2, N):
+    height = im1.shape[0]
+    width = im1.shape[1]
+
+    normal = (width, height)
+    U, V = lucas_kanade(im1, im2, N)
+    while width >= 20 and height >= 20: 
+        im1 = gausssmooth(cv2.resize(src=im1, dsize=(width // 2, height // 2), interpolation = cv2.INTER_AREA), 2)
+        im2 = gausssmooth(cv2.resize(src=im2, dsize=(width // 2, height // 2), interpolation = cv2.INTER_AREA), 2)
+
+        width = width // 2
+        height = height // 2
+
+        U1, V1 = lucas_kanade(im1, im2, N)
+        U = U + cv2.resize(src=U1, dsize=normal, interpolation = cv2.INTER_AREA)
+        V = V + cv2.resize(src=V1, dsize=normal, interpolation = cv2.INTER_AREA)
+
+    return U, V
 
 def horn_schunck(im1, im2, n_iters, lmbd):
     # kernel = np.ones((N, N))
