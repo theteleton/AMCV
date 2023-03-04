@@ -25,5 +25,33 @@ def lucas_kanade(im1, im2, N):
     
 
 def horn_schunck(im1, im2, n_iters, lmbd):
-    pass
+    # kernel = np.ones((N, N))
+    Ld = np.array([[0, 1/4, 0],
+                    [1/4, 0, 1/4],
+                    [0, 1/4, 0]])
+    I1 = gausssmooth(im1, 1)
+    Ix1, Iy1 = gaussderiv(I1, 1)
+
+    I2 = gausssmooth(im2, 1)
+    Ix2, Iy2 = gaussderiv(I2, 1)
+
+    U = np.zeros(im1.shape)
+    V = np.zeros(im2.shape)
+
+    Ix = (Ix1 + Ix2) / 2 
+    Iy = (Iy1 + Iy2) / 2 
+    It = I1 - I2
+    i = 0
+    while i <= n_iters:
+        Ua = cv2.filter2D(src=U, ddepth=-1, kernel=Ld)
+        Va = cv2.filter2D(src=V, ddepth=-1, kernel=Ld)
+
+        P = (Ix * Ua) + (Iy * Va) + It
+        D = lmbd + (Ix ** 2) + (Iy ** 2)
+ 
+        U = Ua - (Ix * P / D)
+        V = Va - (Iy * P / D)
+        i += 1
+    
+    return U, V
 
