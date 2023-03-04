@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.12.11)  4 MAR 2023 14:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.12.11)  4 MAR 2023 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,56 +722,207 @@ Package gensymb Info: Using \textmu for \micro on input line 45.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-Package epstopdf Info: Source file: <figure.eps>
-(epstopdf)                    date: 2023-03-04 14:22:40
-(epstopdf)                    size: 294438 bytes
-(epstopdf)             Output file: <figure-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=figure-eps-converted-to.pd
-f figure.eps>
-(epstopdf)             \includegraphics on input line 73.
-runsystem(repstopdf --outfile=figure-eps-converted-to.pdf figure.eps)...execute
-d safely (allowed).
+Package epstopdf Info: Source file: <collisionlk.eps>
+(epstopdf)                    date: 2023-03-04 20:04:02
+(epstopdf)                    size: 209918 bytes
+(epstopdf)             Output file: <collisionlk-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-04 21:16:19
+(epstopdf)                    size: 132268 bytes
+(epstopdf)             Command: <repstopdf --outfile=collisionlk-eps-converted-
+to.pdf collisionlk.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+<collisionlk-eps-converted-to.pdf, id=40, 462.72874pt x 347.2975pt>
+File: collisionlk-eps-converted-to.pdf Graphic file (type pdf)
+<use collisionlk-eps-converted-to.pdf>
+Package pdftex.def Info: collisionlk-eps-converted-to.pdf  used on input line 5
+8.
+(pdftex.def)             Requested size: 252.0pt x 189.13824pt.
+Package epstopdf Info: Source file: <collisionhs.eps>
+(epstopdf)                    date: 2023-03-04 20:04:47
+(epstopdf)                    size: 241160 bytes
+(epstopdf)             Output file: <collisionhs-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-04 21:16:19
+(epstopdf)                    size: 132063 bytes
+(epstopdf)             Command: <repstopdf --outfile=collisionhs-eps-converted-
+to.pdf collisionhs.eps>
+(epstopdf)             \includegraphics on input line 63.
+Package epstopdf Info: Output file is already uptodate.
+<collisionhs-eps-converted-to.pdf, id=41, 462.72874pt x 347.2975pt>
+File: collisionhs-eps-converted-to.pdf Graphic file (type pdf)
+<use collisionhs-eps-converted-to.pdf>
+Package pdftex.def Info: collisionhs-eps-converted-to.pdf  used on input line 6
+3.
+(pdftex.def)             Requested size: 252.0pt x 189.13824pt.
+Package epstopdf Info: Source file: <disparitylk.eps>
+(epstopdf)                    date: 2023-03-04 20:02:59
+(epstopdf)                    size: 214886 bytes
+(epstopdf)             Output file: <disparitylk-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-04 21:16:25
+(epstopdf)                    size: 129770 bytes
+(epstopdf)             Command: <repstopdf --outfile=disparitylk-eps-converted-
+to.pdf disparitylk.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+<disparitylk-eps-converted-to.pdf, id=42, 462.72874pt x 347.2975pt>
+File: disparitylk-eps-converted-to.pdf Graphic file (type pdf)
+<use disparitylk-eps-converted-to.pdf>
+Package pdftex.def Info: disparitylk-eps-converted-to.pdf  used on input line 6
+9.
+(pdftex.def)             Requested size: 252.0pt x 189.13824pt.
 
-Package epstopdf Info: Result file: <figure-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-03-04 14:23:05
-(epstopdf)                    size: 236749 bytes.
-<figure-eps-converted-to.pdf, id=19, 376.40625pt x 362.35374pt>
-File: figure-eps-converted-to.pdf Graphic file (type pdf)
-<use figure-eps-converted-to.pdf>
-Package pdftex.def Info: figure-eps-converted-to.pdf  used on input line 73.
-(pdftex.def)             Requested size: 252.0pt x 242.59882pt.
 
-No file main.bbl.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <disparityhs.eps>
+(epstopdf)                    date: 2023-03-04 20:03:32
+(epstopdf)                    size: 226454 bytes
+(epstopdf)             Output file: <disparityhs-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-04 21:16:25
+(epstopdf)                    size: 124219 bytes
+(epstopdf)             Command: <repstopdf --outfile=disparityhs-eps-converted-
+to.pdf disparityhs.eps>
+(epstopdf)             \includegraphics on input line 74.
+Package epstopdf Info: Output file is already uptodate.
+<disparityhs-eps-converted-to.pdf, id=43, 462.72874pt x 347.2975pt>
+File: disparityhs-eps-converted-to.pdf Graphic file (type pdf)
+<use disparityhs-eps-converted-to.pdf>
+Package pdftex.def Info: disparityhs-eps-converted-to.pdf  used on input line 7
+4.
+(pdftex.def)             Requested size: 252.0pt x 189.13824pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <lab2lk.eps>
+(epstopdf)                    date: 2023-03-04 20:01:47
+(epstopdf)                    size: 202649 bytes
+(epstopdf)             Output file: <lab2lk-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-04 21:16:27
+(epstopdf)                    size: 118637 bytes
+(epstopdf)             Command: <repstopdf --outfile=lab2lk-eps-converted-to.pd
+f lab2lk.eps>
+(epstopdf)             \includegraphics on input line 80.
+Package epstopdf Info: Output file is already uptodate.
+<lab2lk-eps-converted-to.pdf, id=44, 462.72874pt x 347.2975pt>
+File: lab2lk-eps-converted-to.pdf Graphic file (type pdf)
+<use lab2lk-eps-converted-to.pdf>
+Package pdftex.def Info: lab2lk-eps-converted-to.pdf  used on input line 80.
+(pdftex.def)             Requested size: 252.0pt x 189.13824pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <lab2hs.eps>
+(epstopdf)                    date: 2023-03-04 20:02:15
+(epstopdf)                    size: 222770 bytes
+(epstopdf)             Output file: <lab2hs-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-04 21:16:27
+(epstopdf)                    size: 112823 bytes
+(epstopdf)             Command: <repstopdf --outfile=lab2hs-eps-converted-to.pd
+f lab2hs.eps>
+(epstopdf)             \includegraphics on input line 85.
+Package epstopdf Info: Output file is already uptodate.
+<lab2hs-eps-converted-to.pdf, id=45, 462.72874pt x 347.2975pt>
+File: lab2hs-eps-converted-to.pdf Graphic file (type pdf)
+<use lab2hs-eps-converted-to.pdf>
+Package pdftex.def Info: lab2hs-eps-converted-to.pdf  used on input line 85.
+(pdftex.def)             Requested size: 231.3638pt x 173.64832pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
+3.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
+3.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+93.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+93.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 93.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 93.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 93.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.86 \end{document}
-                    <./figure-eps-converted-to.pdf>] (./main.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
+3.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package epstopdf Info: Source file: <lab2lk7.eps>
+(epstopdf)                    date: 2023-03-04 21:35:12
+(epstopdf)                    size: 214792 bytes
+(epstopdf)             Output file: <lab2lk7-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-04 21:37:29
+(epstopdf)                    size: 124404 bytes
+(epstopdf)             Command: <repstopdf --outfile=lab2lk7-eps-converted-to.p
+df lab2lk7.eps>
+(epstopdf)             \includegraphics on input line 96.
+Package epstopdf Info: Output file is already uptodate.
+<lab2lk7-eps-converted-to.pdf, id=54, 462.72874pt x 347.2975pt>
+File: lab2lk7-eps-converted-to.pdf Graphic file (type pdf)
+<use lab2lk7-eps-converted-to.pdf>
+Package pdftex.def Info: lab2lk7-eps-converted-to.pdf  used on input line 96.
+(pdftex.def)             Requested size: 231.3638pt x 173.64832pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./main.bbl) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./collisionlk-eps-converted-to.pdf> <./collisionhs-eps-converted-to.pdf> <./d
+isparitylk-eps-converted-to.pdf> <./disparityhs-eps-converted-to.pdf>] [2 <./la
+b2lk-eps-converted-to.pdf> <./lab2hs-eps-converted-to.pdf> <./lab2lk7-eps-conve
+rted-to.pdf>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9B7974A5C2C29C70BF37AF7E37A1A505;294.
+(rerunfilecheck)             Checksum: E86BE1019AA4D84744E04E5B48A04057;1255.
  ) 
 Here is how much of TeX's memory you used:
- 14420 strings out of 479606
- 227523 string characters out of 5877786
- 547680 words of memory out of 5000000
- 32184 multiletter control sequences out of 15000+600000
- 623408 words of font info for 102 fonts, out of 8000000 for 9000
+ 14614 strings out of 479606
+ 231966 string characters out of 5877786
+ 550961 words of memory out of 5000000
+ 32323 multiletter control sequences out of 15000+600000
+ 636760 words of font info for 121 fonts, out of 8000000 for 9000
  376 hyphenation exceptions out of 8191
- 60i,6n,63p,304b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.p
-fb>
-Output written on main.pdf (1 page, 402594 bytes).
+ 60i,8n,63p,764b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb>
+Output written on main.pdf (2 pages, 1010682 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

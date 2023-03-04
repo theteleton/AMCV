@@ -6,17 +6,17 @@ from ex1_utils import gausssmooth, gaussderiv
 def lucas_kanade(im1, im2, N):
     kernel = np.ones((N, N))
     I1 = im1
-    Ix1, Iy1 = gaussderiv(I1, N // 3)
+    Ix1, Iy1 = gaussderiv(I1, 2)
 
     I2 = im2
-    Ix2, Iy2 = gaussderiv(I2, N // 3)
+    Ix2, Iy2 = gaussderiv(I2, 2)
 
  
     Ix = (Ix1 + Ix2) / 2 
     Iy = (Iy1 + Iy2) / 2 
     It = I1 - I2
 
-    It = gausssmooth(It, N // 3)
+    It = gausssmooth(It, 2)
     D = (cv2.filter2D(src=(Ix ** 2), ddepth=-1, kernel=kernel) * cv2.filter2D(src=(Iy ** 2), ddepth=-1, kernel=kernel)) - (cv2.filter2D(src=(Ix * Iy), ddepth=-1, kernel=kernel) ** 2)
  
     U = -((cv2.filter2D(src=(Iy ** 2), ddepth=-1, kernel=kernel) * cv2.filter2D(src=(Ix * It), ddepth=-1, kernel=kernel)) - (cv2.filter2D(src=(Ix * Iy), ddepth=-1, kernel=kernel) * cv2.filter2D(src=(Iy * It), ddepth=-1, kernel=kernel))) / D
