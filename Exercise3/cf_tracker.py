@@ -1,7 +1,8 @@
 import numpy as np
 import cv2
-from ex2_utils import Tracker, get_patch, extract_histogram, create_epanechnik_kernel, backproject_histogram
+from ex2_utils import get_patch, extract_histogram, create_epanechnik_kernel, backproject_histogram
 from ex3_utils import create_gauss_peak, create_cosine_window
+from toolkit_dir.pytracking_toolkit_lite.utils.tracker import Tracker
 
 class CorrelationFilterTracker(Tracker): 
     def initialize(self, image, region):
