@@ -13,6 +13,7 @@ class LongSiamFC(Tracker):
         self.sampling_method = sampling_method
         self.sigma = sigma
         self.n = n
+        self.lost = 0
 
         
     def init(self, image, box):
@@ -34,8 +35,8 @@ class LongSiamFC(Tracker):
         else:
             h = image.shape[0]
             w = image.shape[1]
-            x = self.last_good_center[1]
-            y = self.last_good_center[0]
+            x = self.short.center[1]
+            y = self.short.center[0]
 
             sizex = self.last_good_size[1]
             sizey = self.last_good_size[0]
@@ -47,6 +48,11 @@ class LongSiamFC(Tracker):
             elif self.sampling_method == "gauss":
                 samplex = np.random.normal(x, self.sigma * min(sizex, sizey), self.n)
                 sampley = np.random.normal(y, self.sigma * min(sizex, sizey), self.n)
+                samplex = [min(xi, w - sizex - 1) for xi in samplex]
+                sampley = [min(yi, h - sizey - 1) for yi in sampley]
+                samplex = [max(xi, sizex + 1) for xi in samplex]
+                sampley = [max(yi, sizey + 1) for yi in sampley]
+
             else:
                 samplex = np.random.normal(x, self.sigma * min(sizex, sizey) * self.lost, self.n)
                 sampley = np.random.normal(y, self.sigma * min(sizex, sizey) * self.lost, self.n)
@@ -60,8 +66,7 @@ class LongSiamFC(Tracker):
             self.short.net.eval()
 
             images = [image[int(y - sizey / 2) : int(y + sizey / 2), int(x - sizex / 2) : int(x + sizex / 2)] for (x, y) in samples]
-            print(images)
-            print(self.short.cfg.instance_sz)
+
             x = [cv2.resize(
                 img, [self.short.cfg.instance_sz, self.short.cfg.instance_sz]) for img in images]
             x = np.stack(x, axis=0)
@@ -83,13 +88,16 @@ class LongSiamFC(Tracker):
             confidence_new = response / self.original_response
 
             if confidence_new > self.threshold:
+                print(self.lost)
                 self.lost = 0
                 self.last_good_center = self.short.center
                 self.last_good_size = self.short.target_sz
-                return position, response
             else:
                 self.lost = self.lost + 1
-                return position, 0
+                self.short.center = self.last_good_center
+                self.short.target_sz = self.last_good_size
+            return position, response
+
 
 
 
