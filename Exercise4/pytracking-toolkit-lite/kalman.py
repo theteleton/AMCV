@@ -101,4 +101,4 @@ if __name__ == "__main__":
             j += 1
         i += 1
 
-    fig.savefig("./sol.png")
+    fig.savefig("./sol3.png")

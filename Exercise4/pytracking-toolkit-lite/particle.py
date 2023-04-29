@@ -15,7 +15,7 @@ class ParticleFilter(Tracker):
         self.parameters = PFParams()
 
     def name(self):
-        return "particle-7"
+        return "particle--21"
     
     def initialize(self, image, region):
         self.n = self.parameters.n
@@ -28,7 +28,7 @@ class ParticleFilter(Tracker):
         self.patch[:, :, 1] *= self.kernel
         self.patch[:, :, 2] *= self.kernel
         self.histogram = extract_histogram(self.patch, self.parameters.nbins)
-        self.F, self.Q, _, _ = compute_matrices(self.parameters.model, 1, self.parameters.q * min(self.size[0], self.size[1]) // 2, 1)
+        self.F, self.Q, _, _ = compute_matrices(self.parameters.model, 1, self.parameters.q * min(self.size[0], self.size[1]), 1)
         self.particles = np.zeros((self.n, self.F.shape[0]))
         self.weights = np.ones((self.n))
         self.particles[:, :2] = sample_gauss(self.position, self.Q[:2, :2], self.n)
@@ -74,6 +74,7 @@ class ParticleFilter(Tracker):
             new_position[0] = new_position[0] + (self.weights[i] * self.particles[i, 0])
             new_position[1] = new_position[1] + (self.weights[i] * self.particles[i, 1])
 
+        
         new_position[0] /= np.sum(weights)
         new_position[1] /= np.sum(weights)
 
@@ -97,7 +98,7 @@ class PFParams():
     def __init__(self):
         self.n = 100
         self.nbins = 16
-        self.q = 1
+        self.q = 0.75
         self.sigma = 1
         self.sigma2 = 0.1
         self.alpha = 0.05

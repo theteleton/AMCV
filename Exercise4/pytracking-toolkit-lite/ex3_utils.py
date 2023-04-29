@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 
 
+
 def create_cosine_window(target_size):
     # target size is in the format: (width, height)
     # output is a matrix of dimensions: (width, height)
